@@ -24,7 +24,7 @@ export function Navbar({ fixed }) {
           </span>
         </button>
 
-       <a className="text-primary dark:text-primary-400" href="#!">
+       <a className="text-primary dark:text-primary-400 mr-4" href="#!">
         <img src={Logo} alt="Fishup" className="h-12 w-auto" />
         </a>
       </div>
@@ -50,6 +50,11 @@ export function Navbar({ fixed }) {
           <li className="mb-2 lg:mb-0" data-te-nav-item-ref>
           <ScrollLink to="team" spy={true} smooth={true} offset={-65} duration={500} className="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80 cursor-pointer">
             The team
+            </ScrollLink>
+          </li>
+          <li className="mb-2 lg:mb-0" data-te-nav-item-ref>
+          <ScrollLink to="download" spy={true} smooth={true} offset={-65} duration={500} className="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80 cursor-pointer">
+            Download the app
             </ScrollLink>
           </li>
         </ul>
