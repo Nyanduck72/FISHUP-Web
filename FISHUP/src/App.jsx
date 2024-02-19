@@ -1,12 +1,15 @@
 import './App.css'
 
 import { Link as ScrollLink } from "react-scroll";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Navbar } from './assets/components/navbar';
 
 import { Server, BarChart4Icon, AlarmClock, ActivitySquare, Quote} from 'lucide-react';
 
 import hero from './assets/img/hero.jpg';
+
+import { SignInPage }  from './assets/pages/signIn';
 
 import Marco from './assets/img/team/Marco.jpeg';
 import Chary from './assets/img/team/Chary.jpeg';

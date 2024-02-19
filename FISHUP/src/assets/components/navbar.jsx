@@ -1,8 +1,11 @@
 import React from "react";
 
-import { Link as ScrollLink } from "react-scroll";
+import { Link, Link as ScrollLink } from "react-scroll";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { AlignJustify } from "lucide-react";
+
+import { SignInPage } from "../pages/signIn";
 
 import Logo from "../img/logo_fishup.png";
 
