@@ -9,7 +9,6 @@ export function ContactForm() {
     
     return (
         <>
-        <form onSubmit={handleSubmit}>
         <div className="container my-24 mx-auto md:px-6">
         <section className="mb-32 text-center">
             <div className="py-12 md:px-12">
@@ -19,7 +18,7 @@ export function ContactForm() {
                     <div
                     className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-12 lg:-mr-14">
                     <h2 className="mb-12 text-3xl font-bold">Contact us</h2>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="relative mb-6" data-te-input-wrapper-init>
                         <input
                             type="text"
@@ -92,7 +91,6 @@ export function ContactForm() {
             </div>
         </section>
         </div>
-        </form>
         </>
     )
 }
