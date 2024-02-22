@@ -32,11 +32,6 @@ export function ContactForm() {
                             >Name
                         </label>
                         </div>
-                        <ValidationError 
-                            prefix="Name" 
-                            field="name"
-                            errors={state.errors}
-                        />
                         <div className="relative mb-6" data-te-input-wrapper-init>
                         <input
                             type="email"
