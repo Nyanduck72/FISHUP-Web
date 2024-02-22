@@ -4,14 +4,17 @@ import { Link as ScrollLink } from "react-scroll";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Navbar } from './assets/components/navbar';
+import { ContactForm } from './assets/components/contact';
 
 import { Server, BarChart4Icon, AlarmClock, ActivitySquare, Quote} from 'lucide-react';
 
 import hero from './assets/img/hero.jpg';
+import pricingImg from './assets/img/pricingImg.png';
 
 import { SignInPage }  from './assets/pages/signIn';
 
 import Marco from './assets/img/team/Marco.jpeg';
+import Alex from './assets/img/team/Alex.jpeg';
 import Chary from './assets/img/team/Chary.jpeg';
 
 
@@ -93,30 +96,57 @@ function App() {
         </div>
       </section>
     <section className="bg-gray-50 dark:bg-neutral-700" id='quotes'>
-        <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure className="max-w-screen-md mx-auto">
+    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+      <div className="max-w-screen-md mx-auto mb-4 text-center lg:mb-12">
+        <h2 className="mb-4 pt-12 text-3xl text-center font-extrabold tracking-tight text-gray-900 dark:text-white">Here are some reviews</h2>
+        <p className="mb-2 font-light text-center text-gray-500 sm:text-xl dark:text-gray-400">From previous customers of <span className='text-emerald-600 font-bold'>FISHUP</span></p>
+      </div>
+      <div className="items-center max-w-screen-xl px-4 pb-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+        <div className="col-span-2 mb-8">
+        <figure className="max-w-screen-md mx-auto">
                 <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="#059669"/>
                 </svg> 
                 <blockquote>
-                    <p className="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">"(es un placeholder)"</p>
+                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam possimus corporis omnis, laboriosam obcaecati beatae ducimus? Et odit quas earum esse officia voluptates! Perferendis adipisci doloremque nobis ab dolorum."</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                    <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"/>
+                    <img className="w-8 h-8 rounded-full" src="https://pm1.aminoapps.com/7707/0d88ff120e503da55a1cf8de010ae296e3f89a1cr1-720-794v2_00.jpg" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                        <div className="pr-3 font-medium text-gray-900 dark:text-white">Alex Gonzalez</div>
-                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO de su casa</div>
+                        <div className="pr-3 font-medium text-gray-900 dark:text-white">Pancho Linazas</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Manager of the "Buscando a Memo" pt-store</div>
                     </div>
                 </figcaption>
             </figure>
         </div>
-      </section>
+          <div className="col-span-2 mb-8">
+          <figure className="max-w-screen-md mx-auto">
+                <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="#059669"/>
+                </svg> 
+                <blockquote>
+                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quae. Iusto laudantium, modi perferendis sequi, quis nihil nisi minus animi aliquam voluptatum maiores mollitia molestias, soluta atque beatae quidem commodi."</p>
+                </blockquote>
+                <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                    <img className="w-8 h-8 rounded-full" src="https://images.milenio.com/bFpy7HL5-yMTS4pGXfGFYoOutiY=/345x237/uploads/media/2020/11/14/alejo-garza-el-valiente-ve_125_0_924_575.jpg" alt="profile picture"/>
+                    <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <div className="pr-3 font-medium text-gray-900 dark:text-white">Ramiro Suarez</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO of Hoteles Ramiro (y dueño de un gran acuario en su casa)</div>
+                    </div>
+                </figcaption>
+            </figure>
+          </div>
+    </div>
+    </div>
+    </section>
     <section className="bg-white dark:bg-neutral-800" id='pricing'>
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
             <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
                 <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Buy the device</h2>
                 <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">For only <span className='text-emerald-600 font-bold'>$XXX</span>, you can get FISHUP at any of our authorized distributers</p>
-
+                <div className="max-w-screen-md mx-auto text-center lg:mb-12">
+                <img src={ pricingImg } alt="Device sold" />
+                </div>
             </div>
         </div>
       </section>
@@ -145,8 +175,8 @@ function App() {
     className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
       <img
         className="rounded-t-lg"
-        src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
-        alt="Palm Springs Road" />
+        src={ Alex }
+        alt="Jesús ALejandro González Luján" />
     <div className="p-6">
       <h5
         className="mb-2 text-xl text-center font-bold font-medium leading-tight text-neutral-800 dark:text-neutral-50">
@@ -177,7 +207,11 @@ function App() {
 </div>        
 </div>
 </section>
-    <section className="bg-gray-50 dark:bg-neutral-800" id='download'>
+    <section className="bg-gray-50 dark:bg-neutral-800" id='contact'>
+      <ContactForm />
+    </section>
+
+    <section className="bg-gray-50 dark:bg-neutral-700" id='download'>
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
             <div className="max-w-screen-sm mx-auto text-center">
                 <h2 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Download the App</h2>
