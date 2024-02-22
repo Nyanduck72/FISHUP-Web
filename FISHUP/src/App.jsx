@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Navbar } from './assets/components/navbar';
+import { ContactForm } from './assets/components/contact';
 
 import { Server, BarChart4Icon, AlarmClock, ActivitySquare, Quote} from 'lucide-react';
 
@@ -95,11 +96,12 @@ function App() {
         </div>
       </section>
     <section className="bg-gray-50 dark:bg-neutral-700" id='quotes'>
-    <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-    <h2 className="mb-8 pt-12 text-3xl text-center font-extrabold tracking-tight text-gray-900 dark:text-white">Here are some reviews</h2>
+    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+      <div className="max-w-screen-md mx-auto mb-4 text-center lg:mb-12">
+        <h2 className="mb-4 pt-12 text-3xl text-center font-extrabold tracking-tight text-gray-900 dark:text-white">Here are some reviews</h2>
         <p className="mb-2 font-light text-center text-gray-500 sm:text-xl dark:text-gray-400">From previous customers of <span className='text-emerald-600 font-bold'>FISHUP</span></p>
-    </div>
-        <div className="items-center max-w-screen-xl px-4 pb-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
+      </div>
+      <div className="items-center max-w-screen-xl px-4 pb-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
         <div className="col-span-2 mb-8">
         <figure className="max-w-screen-md mx-auto">
                 <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +114,7 @@ function App() {
                     <img className="w-8 h-8 rounded-full" src="https://pm1.aminoapps.com/7707/0d88ff120e503da55a1cf8de010ae296e3f89a1cr1-720-794v2_00.jpg" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                         <div className="pr-3 font-medium text-gray-900 dark:text-white">Pancho Linazas</div>
-                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Gerente de tienda de mascotas "Buscando a Memo"</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Manager of the "Buscando a Memo" pt-store</div>
                     </div>
                 </figcaption>
             </figure>
@@ -129,13 +131,14 @@ function App() {
                     <img className="w-8 h-8 rounded-full" src="https://images.milenio.com/bFpy7HL5-yMTS4pGXfGFYoOutiY=/345x237/uploads/media/2020/11/14/alejo-garza-el-valiente-ve_125_0_924_575.jpg" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                         <div className="pr-3 font-medium text-gray-900 dark:text-white">Ramiro Suarez</div>
-                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO de Hoteles Ramiro (y dueño de un gran acuario en su casa)</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO of Hoteles Ramiro (y dueño de un gran acuario en su casa)</div>
                     </div>
                 </figcaption>
             </figure>
           </div>
-        </div>
-      </section>
+    </div>
+    </div>
+    </section>
     <section className="bg-white dark:bg-neutral-800" id='pricing'>
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
             <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
@@ -204,7 +207,11 @@ function App() {
 </div>        
 </div>
 </section>
-    <section className="bg-gray-50 dark:bg-neutral-800" id='download'>
+    <section className="bg-gray-50 dark:bg-neutral-800" id='contact'>
+      <ContactForm />
+    </section>
+
+    <section className="bg-gray-50 dark:bg-neutral-700" id='download'>
         <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
             <div className="max-w-screen-sm mx-auto text-center">
                 <h2 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Download the App</h2>
