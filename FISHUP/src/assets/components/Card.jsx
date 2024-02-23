@@ -1,7 +1,7 @@
 import React from "react";
 function Card() {
   return (
-    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-2">
       <div class="items-center justify-between ">
         <h5 class="text-xl font-bold leading-none text-teal-200 uppercase">
           Peceras
@@ -31,7 +31,7 @@ function Card() {
         </ul>
       </div>
       <div>
-        -----------------------------------------------------------------------------
+        ----------------------------------------------------------------------------
       </div>
     </div>
   );

@@ -12,6 +12,9 @@ function Table() {
             <th id="localizacion" scope="col" class="px-6 py-3">
               Localizacion
             </th>
+            <th id="horario" scope="col" class="px-6 py-3">
+              Prox. comida
+            </th>
             <th id="estado" scope="col" class="px-6 py-3">
               Estado
             </th>
@@ -26,6 +29,7 @@ function Table() {
               Pecera 1
             </th>
             <td class="px-6 py-4">Pasillo 2</td>
+            <td class="px-6 py-4" id="comida">3:00 PM</td>
             <td class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500">Activo</td>
           </tr>
           <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
@@ -36,6 +40,7 @@ function Table() {
               Pecera 2
             </th>
             <td class="px-6 py-4">Entrada a la izquierda</td>
+            <td class="px-6 py-4" id="comida">3:00 PM</td>
             <td class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500">Activo</td>
           </tr>
           <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
@@ -46,6 +51,7 @@ function Table() {
               Pirañas
             </th>
             <td class="px-6 py-4">Pasillo 5</td>
+            <td class="px-6 py-4" id="comida">3:00 PM</td>
             <td class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500">Activo</td>
           </tr>
           <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
@@ -56,6 +62,7 @@ function Table() {
               Pez payaso
             </th>
             <td class="px-6 py-4">Piso 2, pasillo 1</td>
+            <td class="px-6 py-4" id="comida">3:00 PM</td>
             <td class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500">Activo</td>
           </tr>
         </tbody>
