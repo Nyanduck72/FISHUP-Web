@@ -22,7 +22,7 @@ ChartJS.register(
   Filler
 );
 
-var temperatura = [0, 56, 20, 36, 80, 40, 30, -20, 25, 30, 12, 60];
+var temperatura = [20, 24, 18, 22, 23, 12, 15];
 var dias = [
   "Lunes",
   "Martes",
@@ -47,7 +47,7 @@ var data = {
     },
     {
       label: "Pecera 2",
-      data: [20, 25, 60, 65, 45, 10, 0, 25, 35, 7, 20, 25],
+      data: [20, 25, 18, 20, 26, 16, 17],
       borderColor: "rgb(0, 255, 0)",
       pointRadius: 5,
       pointBorderColor: "rgb(0, 255, 0)",
@@ -61,11 +61,11 @@ var dias = {
       min: 0,
     },
     x: {
-      ticks: { color: "rgb(255, 99, 132)" },
+      ticks: { color: "rgb(0, 0, 255,)" },
     },
   },
 };
 
-export default function Graph() {
+export default function GraphPh() {
   return <Line data={data} options={dias} />;
 }
