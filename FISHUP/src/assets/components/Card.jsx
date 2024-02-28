@@ -1,5 +1,5 @@
 import React from "react";
-function Card() {
+export function Card() {
   return (
     <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-2 md:p-4">
       <div class="items-center justify-between">
@@ -37,4 +37,3 @@ function Card() {
   );
 }
 
-export default Card;

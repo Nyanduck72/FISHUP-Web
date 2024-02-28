@@ -1,8 +1,8 @@
-import Table from "./assets/components/Table";
-import Card from "./assets/components/Card";
-import GraphTm from "./assets/components/GraphTm";
-import GraphPh from "./assets/components/GraphpH";
-import Logo from "./assets/img/logo_fishup.png";
+import { Table } from "../components/Table";
+import { Card } from "../components/Card";
+import { Graph } from "../components/GraphTm";
+import { GraphPh } from "../components/GraphpH";
+import Logo  from "../img/logo_fishup.png";
 
 export function Dashboard() {
   return (
@@ -10,7 +10,7 @@ export function Dashboard() {
       <div
         className="bg-blend-normal absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: `url('https://c4.wallpaperflare.com/wallpaper/457/150/565/abstracto-oscuro-rayas-textura-wallpaper-thumb.jpg')`,
+          backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/457/150/565/abstracto-oscuro-rayas-textura-wallpaper-thumb.jpg')",
         }}
       >
         <div className="items-center max-w-24 ml-5">
@@ -32,7 +32,7 @@ export function Dashboard() {
                   <h1 className="m-1 text-base italic font-sans text-center">
                     Promedio Temperatura
                   </h1>
-                  <GraphTm />
+                  <Graph />
                 </div>
                 <div className="min-w-full bg-gray-800 border border-green-200 rounded-lg p-1 shadow-xl">
                   <h1 className="m-1 text-base italic font-sans text-center">

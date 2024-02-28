@@ -1,7 +1,8 @@
 import React from "react";
 
-function Table() {
+export function Table() {
   return (
+    <>
     <div class="relative overflow-x-auto shadow-md rounded-lg">
       <table class=" w-full text-sm text-left rtl:text-right border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -84,7 +85,6 @@ function Table() {
         </tbody>
       </table>
     </div>
+    </>
   );
 }
-
-export default Table;

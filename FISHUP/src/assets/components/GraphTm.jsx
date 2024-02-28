@@ -66,6 +66,6 @@ var dias = {
   },
 };
 
-export default function Graph() {
+export function Graph() {
   return <Line data={data} options={dias} />;
 }
