@@ -53,7 +53,7 @@ export function ContactForm() {
                     <div
                     className="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
                     <iframe
-                        src="https://maps.google.com/maps?q=chihuahua&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=28.736865,-106.096897&hl=es;t=&z=17&ie=UTF8&iwloc=&output=embed"
                         className="absolute left-0 top-0 h-full w-full rounded-lg"
                         frameborder="0"
                         allowfullscreen></iframe>
