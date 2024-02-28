@@ -1,11 +1,9 @@
 import React from "react";
 
-import { Link, Link as ScrollLink } from "react-scroll";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as Redirect } from 'wouter';
 
 import { AlignJustify } from "lucide-react";
-
-import { SignInPage } from "../pages/signIn";
 
 import Logo from "../img/logo_fishup.png";
 
@@ -69,11 +67,11 @@ export function Navbar({ fixed }) {
       </div>
 
       <div className="my-1 flex items-center lg:my-0 lg:ml-auto">
-        <button type="button"
+        <Redirect href="/SignLog"
           className="inline-block rounded bg-emerald-600 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#afa] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_#afa, 0_4px_18px_0_#afaf0] focus:bg-emerald-400 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
           data-te-ripple-init data-te-ripple-color="light">
           Get started
-        </button>
+        </Redirect>
       </div>
     </div>
   </nav>    
