@@ -47,7 +47,7 @@ var data = {
     },
     {
       label: "Pecera 2",
-      data: [20, 25, 18, 20, 26, 16, 17],
+      data: [19, 15, 18, 20, 23, 16, 17],
       borderColor: "rgb(0, 255, 0)",
       pointRadius: 5,
       pointBorderColor: "rgb(0, 255, 0)",

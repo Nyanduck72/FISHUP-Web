@@ -11,6 +11,7 @@ import pricingImg from '../img/pricingImg.png';
 import Marco from '../img/team/Marco.jpeg';
 import Alex from '../img/team/Alex.jpeg';
 import Chary from '../img/team/Chary.jpeg';
+import { Link as Redirect } from 'wouter';
 
 
 export function Landing() {
@@ -31,8 +32,8 @@ export function Landing() {
             <h1 className="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
               Caring for your fishes <br /><span className="text-emerald-600">has never been easier</span>
             </h1>
-            <a className="mb-2 inline-block rounded bg-emerald-600 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#aaffaa] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_#aaffaaf0, 0_4px_18px_0_#aaffaa30] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_#aaffaa30] md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Get Started</a>
+            <Redirect className="mb-2 inline-block rounded bg-emerald-600 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#aaffaa] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_#aaffaaf0, 0_4px_18px_0_#aaffaa30] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_#aaffaa30] md:mr-2 md:mb-0"
+              data-te-ripple-init data-te-ripple-color="light" href="/SignLog" role="button">Get Started</Redirect>
             <ScrollLink to={"elements"} spy={true} smooth={true} offset={-70} duration={300} className="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
               data-te-ripple-init data-te-ripple-color="light" href="#elements" role="button">Learn more</ScrollLink>
           </div>
@@ -103,13 +104,13 @@ export function Landing() {
                     <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="#059669"/>
                 </svg> 
                 <blockquote>
-                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam possimus corporis omnis, laboriosam obcaecati beatae ducimus? Et odit quas earum esse officia voluptates! Perferendis adipisci doloremque nobis ab dolorum."</p>
+                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"I've always struggled with keeping track of the needs of the fishes in my store. When I heard about FISHUP, I checked them out as soon as I could!"</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                     <img className="w-8 h-8 rounded-full" src="https://pm1.aminoapps.com/7707/0d88ff120e503da55a1cf8de010ae296e3f89a1cr1-720-794v2_00.jpg" alt="profile picture"/>
-                    <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                    <div className="flex items-center divide-x-2 divide-emerald-600 dark:divide-emerald-600">
                         <div className="pr-3 font-medium text-gray-900 dark:text-white">Pancho Linazas</div>
-                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Manager of the "Buscando a Memo" pt-store</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Manager of the "Buscando a Memo" pet-store</div>
                     </div>
                 </figcaption>
             </figure>
@@ -120,13 +121,13 @@ export function Landing() {
                     <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="#059669"/>
                 </svg> 
                 <blockquote>
-                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quae. Iusto laudantium, modi perferendis sequi, quis nihil nisi minus animi aliquam voluptatum maiores mollitia molestias, soluta atque beatae quidem commodi."</p>
+                    <p className="text-xl text-center font-medium text-gray-900 md:text-2xl dark:text-white">"My business is a tough one to manage correctly, mijo. This product helps me get back sooner to it and I can rest easy knowing I can take care of them from wherever."</p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                     <img className="w-8 h-8 rounded-full" src="https://images.milenio.com/bFpy7HL5-yMTS4pGXfGFYoOutiY=/345x237/uploads/media/2020/11/14/alejo-garza-el-valiente-ve_125_0_924_575.jpg" alt="profile picture"/>
-                    <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                    <div className="flex items-center divide-x-2 divide-emerald-600 dark:divide-emerald-600">
                         <div className="pr-3 font-medium text-gray-900 dark:text-white">Ramiro Suarez</div>
-                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO of Hoteles Ramiro (y dueño de un gran acuario en su casa)</div>
+                        <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO of Hoteles Ramiro</div>
                     </div>
                 </figcaption>
             </figure>
@@ -151,7 +152,7 @@ export function Landing() {
             <p className="mb-5 font-light text-center text-gray-500 sm:text-xl dark:text-gray-400">Hi!, we're the team behind <span className='text-emerald-600 font-bold'>FISHUP</span></p>
         <div className="grid-cols-1 sm:grid md:grid-cols-3 ">
   <div
-    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-800 sm:shrink-0 sm:grow sm:basis-0">
       <img
         className="rounded-t-lg"
         src={ Marco }
@@ -161,29 +162,29 @@ export function Landing() {
         className="mb-2 text-xl font-medium font-bold text-center leading-tight text-neutral-800 dark:text-neutral-50">
         Marco Antonio Duarte Corona
       </h5>
-      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-400">
         Back-end Developer & Dashboard Designer 
       </p>
     </div>
   </div>
   <div
-    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-800 sm:shrink-0 sm:grow sm:basis-0">
       <img
         className="rounded-t-lg"
         src={ Alex }
-        alt="Jesús ALejandro González Luján" />
+        alt="Jesús Alejandro González Luján" />
     <div className="p-6">
       <h5
         className="mb-2 text-xl text-center font-bold font-medium leading-tight text-neutral-800 dark:text-neutral-50">
         Jesús Alejandro González Luján
       </h5>
-      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-400">
         Front-end Developer & Designer
       </p>
     </div>
   </div>
   <div
-    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-800 sm:shrink-0 sm:grow sm:basis-0">
       <img
         className="rounded-t-lg"
         src={ Chary }
@@ -194,7 +195,7 @@ export function Landing() {
         className="mb-2 text-xl text-center font-bold font-medium leading-tight text-neutral-800 dark:text-neutral-50">
         Carlos Abraham Jiménez Carrera
       </h5>
-      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+      <p className="mb-4 text-base text-center text-neutral-600 dark:text-neutral-400">
         IoT Specialist and Back-end Developer
       </p>
     </div>
