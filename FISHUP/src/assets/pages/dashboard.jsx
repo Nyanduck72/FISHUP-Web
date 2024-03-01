@@ -4,6 +4,8 @@ import { Graph } from "../components/GraphTm";
 import { GraphPh } from "../components/GraphpH";
 import Logo  from "../img/logo_fishup.png";
 
+import { Link as Redirect } from 'wouter';
+
 export function Dashboard() {
   return (
     <>
@@ -16,7 +18,9 @@ export function Dashboard() {
       >
         <div className="items-center max-w-24 ml-5">
           <nav>
+            <Redirect href="/">
             <img src={Logo} alt="Logo Fishup" />
+            </Redirect>
           </nav>
         </div>
         <div className="p-8 m-6 border border-emerald-600 rounded-lg shadow dark:bg-neutral-800 dark:border-green-200 ">
@@ -29,15 +33,15 @@ export function Dashboard() {
                 <Table />
               </div>
               <div className="grid gap-8 md:grid-cols-2 shadow-inner">
-                <div className="min-w-full bg-gray-800 border border-green-200 rounded-lg p-1 shadow-xl">
+                <div className="min-w-full bg-neutral-800 border border-emerald-400 rounded-lg p-1 shadow-xl">
                   <h1 className="m-1 text-base italic font-sans text-center">
-                    Promedio Temperatura
+                    Temperatura
                   </h1>
                   <Graph />
                 </div>
-                <div className="min-w-full bg-gray-800 border border-green-200 rounded-lg p-1 shadow-xl">
+                <div className="min-w-full bg-neutral-800 border border-emerald-400 rounded-lg p-1 shadow-xl">
                   <h1 className="m-1 text-base italic font-sans text-center">
-                    Promedio pH
+                    pH
                   </h1>
                   <GraphPh />
                 </div>

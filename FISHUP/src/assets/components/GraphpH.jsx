@@ -22,7 +22,7 @@ ChartJS.register(
   Filler
 );
 
-var temperatura = [20, 24, 18, 22, 23, 12, 15];
+var ph = [7, 7, 7, 6.8, 7.1, 7.2, 7];
 var dias = [
   "Lunes",
   "Martes",
@@ -39,7 +39,7 @@ var data = {
     // Cada una de las líneas del gráfico
     {
       label: "Pecera 1",
-      data: temperatura,
+      data: ph,
       fill: true,
       borderColor: "rgb(255, 99, 132)",
       pointRadius: 5,
@@ -47,7 +47,7 @@ var data = {
     },
     {
       label: "Pecera 2",
-      data: [20, 25, 18, 20, 26, 16, 17],
+      data: [7, 7, 6.5, 6.7, 7.1, 7, 7.3],
       borderColor: "rgb(0, 255, 0)",
       pointRadius: 5,
       pointBorderColor: "rgb(0, 255, 0)",
