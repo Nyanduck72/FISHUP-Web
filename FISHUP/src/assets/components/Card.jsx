@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../../../config";
-import { ref, set, get, onValue } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 
 export function Card() {
   const [valorsito, setValorsito] = useState("");
-  const addDataOn = () => {
+
+  useEffect(() => {
     const starCountRef = ref(db, "test/int");
-    onValue(starCountRef, (snapshot) => {
+    const getData = onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
       setValorsito(data);
     });
-    console.log(valorsito);
-  };
+
+    // Devuelve una función de limpieza que se ejecutará cuando el componente se desmonte
+    return () => {
+      getData(); // Detiene la escucha de cambios en la referencia
+    };
+  }, []); // El array vacío asegura que se ejecute solo una vez, cuando el componente se monta
 
   return (
     <div className="w-full bg-white border border-emerald-600 rounded-lg shadow dark:bg-neutral-700 dark:border-none p-2 md:p-4">
@@ -51,9 +56,6 @@ export function Card() {
             </div>
           </li>
         </ul>
-      </div>
-      <div>
-        <button onClick={addDataOn}>Jalar</button>
       </div>
     </div>
   );
