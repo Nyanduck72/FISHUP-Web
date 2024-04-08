@@ -2,9 +2,9 @@ import { Table } from "../components/Table";
 import { Card } from "../components/Card";
 import { Graph } from "../components/GraphTm";
 import { GraphPh } from "../components/GraphpH";
-import Logo  from "../img/logo_fishup.png";
+import Logo from "../img/logo_fishup.png";
 
-import { Link as Redirect } from 'wouter';
+import { Link as Redirect } from "wouter";
 
 export function Dashboard() {
   return (
@@ -12,14 +12,15 @@ export function Dashboard() {
       <div
         className="bg-blend-normal absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/457/150/565/abstracto-oscuro-rayas-textura-wallpaper-thumb.jpg')",
+          backgroundImage:
+            "url('https://c4.wallpaperflare.com/wallpaper/457/150/565/abstracto-oscuro-rayas-textura-wallpaper-thumb.jpg')",
           backdropFilter: "blur(15px)",
         }}
       >
         <div className="items-center max-w-24 ml-5">
           <nav>
             <Redirect href="/">
-            <img src={Logo} alt="Logo Fishup" />
+              <img src={Logo} alt="Logo Fishup" />
             </Redirect>
           </nav>
         </div>
@@ -35,7 +36,7 @@ export function Dashboard() {
               <div className="grid gap-8 md:grid-cols-2 shadow-inner">
                 <div className="min-w-full bg-neutral-800 border border-emerald-400 rounded-lg p-1 shadow-xl">
                   <h1 className="m-1 text-base italic font-sans text-center">
-                    Temperatura
+                    TDS
                   </h1>
                   <Graph />
                 </div>
